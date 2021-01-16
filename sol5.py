@@ -594,4 +594,3 @@ Submit your exercise via git and ensure that the presubmission script passes suc
 #@markdown Playing this cell will create a zip file with your username on it and downloads it.
 
 #@markdown Download your answers and outputs and add them to your git project.
-!zip {cs_id}.zip *.png answer*.txt
