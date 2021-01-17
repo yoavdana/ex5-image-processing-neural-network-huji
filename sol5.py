@@ -317,7 +317,7 @@ def train_model(model, images, corruption_func, batch_size, steps_per_epoch, num
     valid_data_set=load_dataset(validation_set, batch_size, corruption_func,crop_size)
     model.compile(loss='mean_squared_error',optimizer=Adam(beta_2=0.9))
     model.fit_generator(train_data_set,steps_per_epoch=steps_per_epoch,
-    epochs=num_epochs,validation_data=valid_data_set,validation_steps=num_valid_samples)
+    epochs=num_epochs,validation_data=valid_data_set,validation_steps=num_valid_samples/batch_size)
 
 """# 6 Image Restoration of Complete Images"""
 
