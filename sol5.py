@@ -342,7 +342,7 @@ def restore_image(corrupted_image, base_model):
     restored_image=new_model.predict(pre_pro_im)[0]
     restored_image +=0.5
     restored_image=np.clip(restored_image,0,1)
-    return restored_image
+    return restored_image.reshape(hight,width).astype('float64')
 
 """# 7 Application to Image Denoising and Deblurring
 ## 7.1 Image Denoising
