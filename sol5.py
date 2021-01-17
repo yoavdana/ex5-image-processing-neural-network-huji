@@ -287,7 +287,7 @@ def build_nn_model(height, width, num_channels, num_res_blocks):
     :param num_res_blocks: number of residual blocks
     :return: an untrained Keras model.
     """
-    input=Input(shape =(height,width,1))
+    input=Input(shape =(height,width,1))#
     input_conv=Conv2D(num_channels,(3,3),padding='same')(input)
     input_to_res=Activation('relu')(input_conv)
     for res in range(num_res_blocks):
