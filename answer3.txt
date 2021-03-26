@@ -1,9 +1,0 @@
-in both tasks (deblur an denoise),we can see that in general if we add more blocks the MSE 
-loss is improving .in the case of the debluring model,1 res block is intend to underfit the data 
-and it min loss is little les than 0.014,with 2 res blocks we can see a major improvment and it 
-seems that the model will keep improving for more epochs,an intresting thing accure with 4 
-and 5 res blocks.it looks like 4 res blocks as a lower loss than 5,i think it's may point on the
-existance of some optimal number of res blocks and maybe 5 res blocks passes it.in addition 
-it looks like if we will do more epochs the 4 and 5 will decreas more,the min aproximate
-values for the last cases are 0.008.in the case of the denoise model,it look like there ar 
-better performance when adding more res blocks,but the model is not stable in case of 2,3,4 res blocks
