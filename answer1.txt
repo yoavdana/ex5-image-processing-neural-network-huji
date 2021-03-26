@@ -1,8 +1,0 @@
-the core of the implamentation is in the corupttion function,the rest of it is generic for all
-the models.the SR coruption pick a random integer between 2-4 resize the image by 1/the
-number ,then resize it back by the integer,when the risizsing is done we loose information 
-from the image (sample out some pixels)'and as we do the inverese process this lost 
-information can't be restored accuratly,and the missed pixels are beeing evaluated by the 
-zoom function(i guess by statistical or intepoliation algorithm),and as a result we get a lower 
-resolution image,finaly i used map coordinates to return to the original input shape.the out 
-come of loosing information and cousing lower resolution image will assist the network to determine its weights for this specific task.  
